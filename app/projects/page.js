@@ -6,14 +6,14 @@ import Link from 'next/link';
 
 const projects = [
   {
-    title: 'AI Insurance Agent',
+    title: 'AI Insurance Agent (WIP)',
     description: 'Conversational agent to explain and quote health insurance.',
-    href: '/projects/insurance-agent',
+    href: '/insurance',
   },
   {
     title: 'RapGPT2.0',
     description: 'Multimodal LLM that generates rap lyrics and audio.',
-    href: '/projects/rap-generator',
+    href: 'https://eminemgpt.com',
   },
   {
     title: 'Retinal Disease Classifier',
@@ -26,8 +26,8 @@ const detailedProjects = [
   {
     title: "AI Insurance Agent",
     description:
-      "Built a large language model–powered chatbot to answer insurance plan questions with state-specific regulations. Integrated vector search and used Retrieval-Augmented Generation (RAG).",
-    link: "/projects/insurance-agent",
+      "An interactive assistant designed to help users navigate and select health insurance plans.\nBuilt with LangGraph, this agent leverages a combination of retrieval-augmented generation (RAG), function-calling, and >decision-oriented dialogue flows.",
+    link: "/insurance",
   },
   {
     title: "RapGPT2.0-Eminem",
