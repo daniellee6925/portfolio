@@ -10,12 +10,6 @@ const Header = () => {
                 Hi! I'm Daniel Lee <Image src={assets.hand_icon} alt = ''
                 className = 'w-12'/>
         </h3>
-        <h1 className='text-3xl text-5xl font-Ovo'>
-            Actuary driven to solve real-world problems with LLMs.
-        </h1>
-            <p className='max-w-xl mx-auto font-Ovo'>
-                Health actuary and aspiring ML engineer using LLMs to build consumer-friendly AI solutions for healthcare and insurance.
-            </p>
             <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>
                 <a href="#contact" 
                 className='px-10 py-3 border border-white rounded-full bg-black text-white flex items-center gap-2'
