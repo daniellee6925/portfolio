@@ -63,12 +63,12 @@ const ProjectsPage = () => {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {projects.map((project, index) => (
-            <Link href={project.href} key={index}>
+            <a href={project.href}target="_blank" rel="noopener noreferrer" key={index}>
               <div className="border border-gray-300 rounded-xl p-6 hover:bg-violet-100 hover:-translate-y-1 transition-all duration-300 cursor-pointer">
                 <h3 className="text-xl font-semibold text-gray-800 mb-2">{project.title}</h3>
                 <p className="text-gray-600 text-sm">{project.description}</p>
               </div>
-            </Link>
+            </a>
           ))}
         </div>
         
