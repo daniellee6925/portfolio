@@ -2,7 +2,9 @@
 
 import { useEffect, useState } from 'react';
 import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import Navbar from '../components/Navbar'; 
+import Footer from '../components/Footer'; 
 
 export default function LearningPage() {
   const [content, setContent] = useState('');
@@ -23,8 +25,19 @@ export default function LearningPage() {
         It serves as a reference for myself when I need to recall concepts, a guide for others who are also starting out in ML, 
         and a record of my ongoing progress and improvement.
       </p>
-      <ReactMarkdown>{content}</ReactMarkdown>
+      <ReactMarkdown remarkPlugins={[remarkGfm]} components={{
+        ul: ({ node, ...props }) => (
+          <ul className="list-disc ml-6" {...props} />
+        ),
+        li: ({ node, ...props }) => (
+          <li className="ml-2" {...props} />
+        ),
+        p: ({ node, ...props }) => (
+          <p className="mb-2" {...props} />
+        )
+      }}>{content}</ReactMarkdown>
     </div>
+     <Footer/>
     </div>
   );
 }

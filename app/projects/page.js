@@ -2,6 +2,7 @@
 
 import React from 'react';
 import Navbar from '../components/Navbar'; 
+import Footer from '../components/Footer'; 
 import Link from 'next/link';
 
 const projects = [
@@ -92,7 +93,7 @@ const ProjectsPage = () => {
           ))}
         </div>
 
-        <div className="my-20">
+        <div className="mt-20">
           <h3 className="text-center text-3xl font-Ovo">Other Projects</h3>
           <div className="mt-10 grid grid-cols-1 gap-6">
             {otherProjects.map(({ title, description, href}, index) => (
@@ -110,6 +111,7 @@ const ProjectsPage = () => {
         </div>
 
       </section>
+      <Footer />
     </div>
   );
 };

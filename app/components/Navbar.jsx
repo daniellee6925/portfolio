@@ -35,15 +35,15 @@ const Navbar = () => {
             <Image src = {assets.logo} alt = ""  className='w-40 cursor-pointer mr-14'/> 
         </a>
         <ul className={'hidden md:flex items-center gap-6 lg:gap-8 rounded-full px-12 py-3 bg-white shadow-sm bg-opacity-50'}>
-            <li><Link className="font-Ovo" href="/">Home</Link></li>
-            <li><a className="font-Ovo" href="/#about">About Me</a></li>
-            <li><Link  className="font-Ovo" href="/projects">Projects</Link ></li>
-            <li><Link className="font-Ovo" href="/learn">Learning of the day</Link></li>
+            <li><Link className="font-Ovo hover:text-violet-700" href="/">Home</Link></li>
+            <li><a className="font-Ovo hover:text-violet-700" href="/#about">About Me</a></li>
+            <li><Link  className="font-Ovo hover:text-violet-700" href="/projects">Projects</Link ></li>
+            <li><Link className="font-Ovo hover:text-violet-700" href="/learn">Learning of the day</Link></li>
         </ul>
 
         <div className='flex items-center gap-4'>
 
-          <a href ="contact" className='hidden lg:flex items-center gap-3 px-10
+          <a href ="https://chatwithdaniel.streamlit.app/" className='hidden lg:flex items-center gap-3 px-10
           py-2.5 border border-gray-500 rounded-full ml-4 font-Ovo hover:bg-violet-100 hover:-translate-y-1 duration-500'>
           Chat With Me <Image src={assets.arrow_icon} alt = "" className='w-3'/></a>
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 const Education = () => {
   return (
-    <section id="education" className="w-full px-[12%] py-16 bg-white">
+    <section id="education" className="w-full px-[12%] py-4 bg-white">
       <h2 className="text-4xl font-Ovo text-center mb-2">Education & Credentials</h2>
 
       <div className="flex flex-col gap-8 sm:gap-12">
