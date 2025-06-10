@@ -13,7 +13,7 @@ const projects = [
   },
   {
     title: 'RapGPT2.0',
-    description: 'Multimodal LLM that generates rap lyrics and audio.',
+    description: "LLM that generates rap lyrics and audio in Eminem's style and voice.",
     href: 'https://eminemgpt.com',
   },
   {
@@ -25,19 +25,19 @@ const projects = [
 
 const detailedProjects = [
   {
-    title: "AI Insurance Agent",
+    title: "AI Insurance Agent (Learn More...)",
     description:
       "An interactive assistant designed to help users navigate and select health insurance plans.\nBuilt with LangGraph, this agent leverages a combination of retrieval-augmented generation (RAG), function-calling, and >decision-oriented dialogue flows.",
     link: "/insurance",
   },
   {
-    title: "RapGPT2.0-Eminem",
+    title: "RapGPT2.0-Eminem (Learn More...)",
     description:
       "Built on GPT-2 with 124M parameters, this model was trained on AWS EC2 with LoRA fine-tuning to generate Eminem-style rap lyrics.\nIt includes KV-caching, flash attention, and quantization for fast inference.\nEvaluated model outputs with a BERT-based classifier to ensure stylistic fidelity with Eminem Lyrics\nIntegrated with ElevenLabs for audio output and deployed with a custom UI for interactive lyric generation...",
     link: "/rapgpt",
   },
   {
-    title: "Retinal Disease Classifier",
+    title: "Retinal Disease Classifier (Learn More...)",
     description:
       "Developed a hierarchical classification model that identifies retinal diseases from medical images, achieving 85% recall in disease identification and 82% accuracy in classifying specific conditions.\nThe project involved building and training models using EfficientNet and Vision Transformers and was evaluated with the help of TensorBoard.\nTo optimize the model for deployment, model's size was reduced while maintaining high performance, achieving an average inference time of 0.5 seconds.\nThe final model was deployed on Hugging Face Spaces, allowing users to interact with the classifier via a simple, intuitive interface built with Gradio...",
     link: "/retinal",

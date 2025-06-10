@@ -14,14 +14,24 @@ const About = () => {
                 <Image src={assets.user_image} alt='user' className='w-full rounded-3xl'/>
             </div>
             <div className='flex-1'>
-                <p className="mb-6">
-                    I'm a health actuary (ASA) with a strong foundation in mathematics, statistics, and data science, currently working at Blue Shield of California. 
-                    With experience building pricing and forecasting models, 
-                    I'm now focused on applying machine learning—especially large language models (LLMs)—to improve decision-making in health insurance. 
-                    I'm pursuing an M.S. in Computer Science from Georgia Tech, hold a B.A. in Data Science from UC Berkeley, and code in Python and PyTorch. 
-                    Self-taught in LLMs, I've built projects including an AI insurance agent, a multimodal rap lyric generator, and a retinal disease classifier. 
-                    My passion lies in creating agentic AI that makes healthcare and insurance more transparent and consumer-friendly.
-                </p>
+                <ul className="mb-6 list-disc list-inside space-y-2 text-gray-700">
+                    <li>
+                        <strong>Who I am:</strong> A health actuary (ASA) with a strong foundation in mathematics, statistics, and data science.
+                    </li>
+                    <li>
+                        <strong>Where I work:</strong> Blue Shield of California.
+                    </li>
+                    <li>
+                        <strong>Education:</strong> M.S. in Computer Science (in progress) from Georgia Tech, and a B.A. in Data Science from UC Berkeley.
+                    </li>
+
+                    <li>
+                        <strong>Projects:</strong> AI insurance agent, multimodal rap lyric generator, and a retinal disease classifier.
+                    </li>
+                    <li>
+                        <strong>Passion:</strong> Creating agentic AI that makes healthcare and insurance more transparent and consumer-friendly.
+                    </li>
+                    </ul>
 
                 <ul className='grid grid-cols-1 sm:grid-cols-3 gap-6 max-w-2xl'>
                     {infoList.map(({ icon, title, description, href }, index) => (
