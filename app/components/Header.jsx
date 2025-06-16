@@ -11,7 +11,7 @@ const Header = () => {
                 className = 'w-12'/>
         </h3>
         <p>
-          Try the <strong>Chat with Me</strong> feature — an AI powered by LangChain and RAG that answers questions about myself.
+          Try the <strong>Chat with Me</strong> feature — an AI powered by RAG Application that answers questions about myself.
         </p>
 
             <div className='flex flex-col sm:flex-row items-center gap-4 mt-4'>

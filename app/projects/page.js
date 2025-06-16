@@ -13,7 +13,7 @@ const projects = [
   },
   {
     title: 'RapGPT2.0',
-    description: "LLM that generates rap lyrics and audio in Eminem's style and voice.",
+    description: "LLM that generates rap lyrics & audio in Eminem's style and voice.",
     href: 'https://eminemgpt.com',
   },
   {
