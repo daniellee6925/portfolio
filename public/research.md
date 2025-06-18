@@ -82,5 +82,86 @@
     - Fourier transform = turning something complicated (like a wave or signal) into a few repeating patterns (frequencies).
 
 
+[**Qwen3 Technical Report**] (https://arxiv.org/pdf/2505.09388)
+- Key innovation
+    - Integration of thinking mode (reasoning) and non-thinking mode
+    - Eliminates the need to switch between nodes 
+    - Thinking budget mechanism
+
+
+- Pretraining 
+- Synthesize data using domain specific mode
+- 3 stages
+    - General knowledge
+    - Further trained on knowledge-intensive data such as math, coding 
+    - Trained on long context
+- Pretraining dataset
+    - "To further expand the pre-training data corpus, we first employ a vision language model to perform text recognition on a large volume of PDF-like documents (scanned paper)."
+    - The recognized text is then refined which helps improve its quality. 
+
+
+- Postraining
+- First 2 stages (developing strong reasoning abilities)
+- Step 1: long chain-of-thought (CoT) cold-start fine tuning 
+    - Chain-of-thought
+        - Technique where model generates intermediate reasoning steps before arriving at a final answer 
+    - Cold-Start
+        - Model is random weights or basic LLM
+    - CoT-formatted datasets — where inputs include a question, and outputs are long, logical step-by-step solutions. - use finetuning or reinforcement learning 
+    - Warm-Start
+        - Two step process
+        - 1. Pretrain model on basic instruction following or Q&A
+        - 2. Finetune on more complex CoT datasets 
+- Step 2: reinforcement learning focusing on mathematics and coding tasks.
+    - 1. Choose task format
+    - 2. Define environment
+        - State: current input
+        - Action: next token or sequence to generate
+        - Reward: 0-1 for being correct
+    - 3. Dataset preparation (preprocess into input-output pairs)
+        - GSM8K (grade school math 8 k), HumanEval
+        - Human written grade-school math problems 
+    - 4. Warm start with fine tuning 
+        - Using the prepared dataset 
+        - Teacher forcing: model given ground truth (actual previous tokens) rather than auto-regressive generation 
+    - 5. Reward modeling 
+        - Collect samples, label/rank response, train reward model
+    - 6. Reinforcement Learning 
+        - Use SFT model as the policy network for PPO
+        - Optimize PPO
+    - 7. Evaluation
+        - For math: numerical answer matching
+        - Last Resort: Human Evaluation 
+
+- Final 2 stages
+ - Step 1: 
+    - we combine data with and without reasoning paths into a unified dataset for further fine-tuning, enabling the model to handle both types of input effectively, 
+    - apply general domain reinforcement learning to improve performance across a wide range of downstream tasks
+- Step : 2For smaller models, use strong-to-weak distilation 
+    - Off-policy distillation: The student learns from data collected by the teacher, without interacting with the environment.
+        - Lets student learn from the teacher’s experiences 
+        - More efficient
+    - On-policy distillation: The student interacts with the environment and receives guidance or targets from the teacher during training.
+        - Learn while acting in the environment with the teacher’s guidance
+        - More stable 
+
+ - *Increasing thinking budget leads to consistent improvement in model’s performance
+
+
+
+[**MiniMax-M1: Scaling Test-Time Compute Efficiently with Lightning Attention**] (https://arxiv.org/pdf/2506.13585)
+- Key Ideas
+- Hybrid Mixture-of-Experts (MoE) 
+    - It combines different types of attention mechanisms or expert networks within the model. 
+    - choose diverse experts for different styles of processing — for example, some for reasoning, some for memory, some for simple tasks.
+- Lightning Attention 
+    - Reduce memory usage and increase speed
+    - How: 
+        - Kernel Approximation: replaces expensive attention formula with a simpler version (similar to kernel trick in SVMs)
+        - Sparse Attention: Rather than attending to all tokens, only look at the few important ones 
+- CISPO Algorithm (clipping importance sampling weights)
+    - controls the learning step size by limiting how much new data influences updates 
+    - contrary to directly limiting changes at each token level (traditional)
+    - smoother and faster training
 
 

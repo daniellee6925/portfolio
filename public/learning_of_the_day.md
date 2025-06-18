@@ -1588,3 +1588,13 @@
 **Learning of the day (6/17)**
 - Learning 
 - How would you horizontally scale your rapGPT
+    - Containerize the model server that has the FastAPI backend and model
+    - Run multiple instances using kubernetes
+    - Use a load balancer like NGINX
+    - Deploy on cloud  
+- MOE model
+    - activates subset of the neural network for each input based on the gating network
+    - benefits:
+        - Efficient, Scalable, Specialization, Parallelism 
+    - Downsides: 
+        - routing complexity, uneven utilization, infrastructure requirements (Good GPUs)
