@@ -1462,3 +1462,129 @@
     - Implement episodic memory compression 
         - Have AI remember past conversations but summarize older conversations to reduce memory
     - Use summarization patterns to reduce context load. 
+
+**Learning of the day (6/9)**
+- Learning
+    - Improving model interactivity 
+    - Think about how a human will interact 
+        - turn-taking (interruptions)
+        - Voice activity detection
+    - Real time streaming rather than audio upload
+        - Low latency. Transcribe as audio comes in
+        - Enable background response 
+        - Real-Time:
+            - Use low latency model
+            - Break data into chunks and process each chunk. Use caching for previous input 
+        - Integrate context tracking 
+            - Model remembers previous conversations 
+            - Use Vector DB to store semantic embeddings 
+        - Have model understand emotions 
+        - Gather audio samples with labeled emotions
+            - Have ‘better’ model label emotions
+            - Use dataset with emotions (metadata)
+            - Train model to classify correct emotion 
+            - Maybe use MoE: one for emotion, one for context 
+
+
+**Learning of the day (6/10)**
+- Learning
+- How to set agent Entry point?
+- Goal is to create an action classifier 
+- First, need an supervised or labeled dataset with a question and agent pair 
+    - This dataset can be synthesized through a more advanced model
+    - Or you can use human labeling
+- Next, you will train a classifier model where it will select the correct call based on the context (cross entropy loss)
+- Use PPO reinforcement learning where the base model is the policy and the reward is choosing the correct tool. Use K-L divergence to keep baseline model intact 
+
+**Learning of the day (6/11)**
+- Learning
+- Test-time reinforcement learning 
+- learning or adaptation happens during inference or evaluation rather than a separate training phase
+- Allows the model to continue improving based on the feedback it receives during use 
+- Benefits: reduces the need for human labels or reward models 
+- It receives feedback by 
+    - Self-evaluation: confidence based
+    - External signals: human-feedback
+    - Environment-derived: failed a task 
+- How can you optimize performance in multi-agent frameworks?
+    - Asynchoronos task execution
+    - Caching frequently used data 
+    - Agent prioritization
+
+
+**Learning of the day (6/12)**
+- Learning
+- Fully Sharded Data Parallel (FSDP) is a distributed training method designed to efficiently train large-scale deep learning models by sharding (splitting) the model's parameters,
+- 1. Sharding
+    - Each GPU only holds a shard of the model
+- 2. Sharing gradients and optimizer states 
+    - Gradients and optimizer states are shared (each GPU has a component of the gradients and optimizer states - momentum/weight decay and these info are shared when needed) 
+    - Same input batch is broadcasted to all GPUs
+- 3. Communication overlap
+    - Overlaps communication with computation during all-gather
+- 4. All gather at Forward pass:
+    - During the forward pass, FSDP temporarily gathers the required shards so the layers can be computed 
+- 5. All Reduce at Backward pass
+-   During backward pass, gradients are reduce-scattered to distribute them 
+
+- How do you mitigate prompt injection in agentic systems?
+    - Input/output validation
+    - Role-based tool access
+    - Instruction hardening: make it harder to bypass or override models behavior 
+
+
+**Learning of the day (6/13)**
+- Learning 
+    - Decoding strategies
+    - Greedy: picks highest probability each step
+    - Beam: maintains top-k sequences each step
+    - Top-k: randomly selects from top-k probable tokens
+    - Top-p: randomly selects from tokens where their cumulative probability exceeds p
+
+- How do you prevent over/underfitting in generative models?
+    - Over: Early stopping, dropout, noise injection, regularization (weight decay) 
+    - Under: increase model depth, layers, training steps 
+
+
+**Learning of the day (6/14)**
+- Learning
+- How do prepare text data for LLM pretraining
+    - 1. Collect data from the web 
+    - 2. Clean and normalize
+        - Bad encodings, extra spaces
+    - 3. Filter low-quality content
+    - 4. Deduplicate
+    - 5. Tokenize
+    - 6. Batching through data loaders 
+
+- What is the role of the latent space in generative models?
+    - Latent space is a compressed representation of the input data. Encoder maps a higher dimensional data into the latent space and the decoder takes the data from the latent space and expands it back to the higher dimension 
+
+**Learning of the day (6/15)**
+- Learning 
+- Preparing fine-tuning dataset
+- Format data by task
+    - Text classification 
+    - Text-label pair 
+    - Instruction tuning (system, User, assistant messages)
+- Watch out for inconsistent formatting, Need very high quality data, make sure each input-output pair matches perfectly
+- Have LLM oversee the dataset to check for any issues or errors 
+
+- What are some limitations of current generative models?
+    - Hallucination and factual inconsistency
+    - High compute and environmental costs
+    - Poor performance in low-resource domains 
+
+**Learning of the day (6/16)**
+- Learning 
+- Magistral: mistral model - reasoning better by only using RL (no SFT)
+- How would you vertically scale your rapGPT 
+    - 1. Use GPU instance
+    - 2. Optimization using vLLM or ONNX (high performance inference engine)
+    - 3. Replace raw FastAPI with optimized model servers such as NVIDIA triton inference server
+    - 4. Use batch inference and cache frequent values. Use Async requests   
+
+
+**Learning of the day (6/17)**
+- Learning 
+- How would you horizontally scale your rapGPT

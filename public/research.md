@@ -65,5 +65,22 @@
 
 
 
+[**Beyond Homogeneous Attention: Memory-Efficient LLMs via Fourier-Approximated KV Cache**](https://arxiv.org/pdf/2506.11886)
+- Problem
+    - When LLMs process longer inputs (longer contexts), they store more Key-Value (KV) pairs in memory. 
+    - This KV cache becomes very large and slows things down.
+- Solution: FourierAttention
+    - Key idea: Attention heads don't all do the same thing:
+        - Lower-dimensional heads focus on local context (e.g., recent tokens).
+        - Higher-dimensional heads capture long-range dependencies.
+- FourierAttention projects the lower-dimensional (local context) parts into Fourier space:
+    - Instead of saving every detail, they convert the short-term memory parts into a simpler summary using Fourier transforms
+- These coefficients are fixed-length, so memory use stays constant, not growing with context length.
+- This method works without training
+
+- What's Fourier?
+    - Fourier transform = turning something complicated (like a wave or signal) into a few repeating patterns (frequencies).
+
+
 
 
