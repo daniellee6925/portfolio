@@ -82,7 +82,7 @@
     - Fourier transform = turning something complicated (like a wave or signal) into a few repeating patterns (frequencies).
 
 
-[**Qwen3 Technical Report**] (https://arxiv.org/pdf/2505.09388)
+[**Qwen3 Technical Report**](https://arxiv.org/pdf/2505.09388)
 - Key innovation
     - Integration of thinking mode (reasoning) and non-thinking mode
     - Eliminates the need to switch between nodes 
@@ -149,7 +149,7 @@
 
 
 
-[**MiniMax-M1: Scaling Test-Time Compute Efficiently with Lightning Attention**] (https://arxiv.org/pdf/2506.13585)
+[**MiniMax-M1: Scaling Test-Time Compute Efficiently with Lightning Attention**](https://arxiv.org/pdf/2506.13585)
 - Key Ideas
 - Hybrid Mixture-of-Experts (MoE) 
     - It combines different types of attention mechanisms or expert networks within the model. 
@@ -165,3 +165,16 @@
     - smoother and faster training
 
 
+[**Xolver: Multi-Agent Reasoning with Holistic Experience Learning Just Like an Olympiad Team**](https://arxiv.org/pdf/2506.14234)
+- Problem?
+    - Current LLMs typically solve each problem independently, without learning from previous problems or experiences. 
+    - They don’t accumulate knowledge over time or collaborate like expert human teams do.
+
+- Xolver is a multi-agent reasoning system designed to give an LLM a kind of persistent memory and collaborative reasoning ability without additional training (training-free). 
+    - Remember and retrieve past experiences (both self-generated and external).
+    - Use tools and external resources.
+    - Collaborate with other "agents"
+    - Evaluate its own reasoning and improve it iteratively.
+- In other words, instead of solving problems from scratch every time, Xolver leverages accumulated experience and teamwork between agents to solve problems more effectively.
+
+- Xolver demonstrates a shift from isolated problem-solving toward experience-aware, collaborative AI agents that reason more like expert humans do.

@@ -1598,3 +1598,22 @@
         - Efficient, Scalable, Specialization, Parallelism 
     - Downsides: 
         - routing complexity, uneven utilization, infrastructure requirements (Good GPUs)
+
+**Learning of the day (6/17)**
+- Learning 
+- Test Time Scaling
+    - Enhancing a model’s performance at inference time without changing model weights or retraining
+- Strategies
+    - 1. Parallel Sampling Methods: Generate multiple answers and pick the best one  
+        - Best-of-N (BoN): Generate N outputs, pick the best.
+        - Beam search: Explore top-k high-probability sequences.
+        - Tree search: Build a decision tree of steps/outputs.
+    - 2. Result Verification and Merging 
+        - When multiple outputs are generated, how do we choose the final answer?
+            - Voting (majority)
+            - Scoring (pick the one with best self-evaluation)
+            - List-wise methods (rank all outputs and merge)
+    - 3. Sequential Revision: Reflection and Self-Refinement
+        - Reflecting only when performance drops works better than reflecting at every step.
+    - 4. Multi-Agent Collaborative Sampling
+        - multiple agents generate different candidate solutions in parallel, then merging them.
