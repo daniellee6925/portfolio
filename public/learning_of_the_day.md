@@ -1599,7 +1599,7 @@
     - Downsides: 
         - routing complexity, uneven utilization, infrastructure requirements (Good GPUs)
 
-**Learning of the day (6/17)**
+**Learning of the day (6/18)**
 - Learning 
 - Test Time Scaling
     - Enhancing a model’s performance at inference time without changing model weights or retraining
@@ -1617,3 +1617,6 @@
         - Reflecting only when performance drops works better than reflecting at every step.
     - 4. Multi-Agent Collaborative Sampling
         - multiple agents generate different candidate solutions in parallel, then merging them.
+
+**Learning of the day (6/20)**
+- Learning

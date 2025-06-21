@@ -178,3 +178,30 @@
 - In other words, instead of solving problems from scratch every time, Xolver leverages accumulated experience and teamwork between agents to solve problems more effectively.
 
 - Xolver demonstrates a shift from isolated problem-solving toward experience-aware, collaborative AI agents that reason more like expert humans do.
+
+[**Revisiting Reinforcement Learning for LLM Reasoning from A Cross-Domain Perspective**](https://arxiv.org/pdf/2506.14965)
+- Problem?
+    - Designing good reward signals for RL in diverse reasoning areas.
+-  re-evaluates prior claims about RL’s effect on LLM reasoning:
+- RL isn’t just about extracting pretraining knowledge.
+    - For well-represented domains in pretraining (e.g., Math, Code, Science), cross-domain RL works well.
+    - For less common domains (e.g., Logic, Simulation, Tabular), RL must be done within-domain to see gains.
+- This suggests that RL can actually teach new skills, not just reinforce memorized ones.
+
+
+[**EMONET-VOICE: A Fine-Grained, Expert-Verified Benchmark for Speech Emotion Detection**](https://arxiv.org/pdf/2506.09827)
+- Problem?
+- Modern AI systems struggle to recognize complex, context-dependent human emotions in spoken languag
+    - Low granularity: Most use basic emotions (happy, sad, angry...), missing nuanced ones like bittersweet, envy, embarrassment.
+    - Unrealistic data: Datasets use studio-quality, acted speech with little linguistic or cultural diversity.
+    - Small scale: Privacy, licensing, and cost issues limit size—making them unsuitable for modern deep learning.
+- Solution
+- Instead of treating emotions as discrete labels, the authors adopt a constructionist view:
+    - Emotions are context-driven and best modeled with multi-label, intensity-aware approaches.
+    - They use frameworks like valence-arousal (e.g., how positive/negative and how intense an emotion is) to better capture emotional nuance.
+- Steps
+    - 1. Create a massive, realistic training dataset using high-quality synthetic voices in multiple languages, with 40 different emotions — not just basic ones.
+    - 2. Build a benchmark with expert-labeled emotion clips to test how well models can understand not just what emotions are present, but how intense they are.
+    - 3. Train a new AI model, called EmpathicInsight-Voice, that can recognize these fine-grained emotions better than current systems.
+
+
