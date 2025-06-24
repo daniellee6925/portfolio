@@ -1620,3 +1620,18 @@
 
 **Learning of the day (6/20)**
 - Learning
+    - What is a Memory Leak? What are the common causes, and How do you handle them?
+    - Memory leak happens when the program holds onto the memory that it no longer needs. This can slow down your program or cache it. Even though python has automatic garbage collection, memory leaks can happen due to leftover references to objects, unused global variables, circular references, cache that is not cleared, etc. Important to clean and remove unused objects, limit cache size. Use tools like trace malloc.
+
+**Learning of the day (6/21)**
+- Learning
+    - Class Methods vs Static Methods?
+    - Both class method and static method doesn't rely on on instance-specific data. Class method is defined with @classmethod and take cls as its first argument, which refers to the class. It can access and modify class-level data and is used for factory methods - creating object in a specific way. Static method is defined with @staticmethod and doesn't take in self or class. It behaves like a regular function but is kept inside class for logical organization. Static methods doesn't need class or instance    
+    - Class Methods vs Instance Methods
+    - Instance methods (def) take in self as an argument and work on instance specific data (has the same class but different instances). Class methods modifies the entire class-level data 
+
+**Learning of the day (6/23)**
+- Learning
+- How do you access a parent class method?
+    - By Inheriting the parent class in the child class, then accessing the parent method in child class.
+    - By Inheriting the parent class in the child class, and using super().

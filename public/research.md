@@ -205,3 +205,45 @@
     - 3. Train a new AI model, called EmpathicInsight-Voice, that can recognize these fine-grained emotions better than current systems.
 
 
+[**Drag-and-Drop LLMs: Zero-Shot Prompt-to-Weights**](https://arxiv.org/pdf/2506.16406)
+- Problem?
+- But LoRA still requires a separate fine-tuning process for each new task, which takes time and compute.
+- DnD: Drag-and-Drop LLMs
+    - a way to generate task-specific LoRA weights instantly, without training, using just a few text prompts.
+- How?
+    - Input: A few task-specific prompts (no labels needed).
+        - Example: "Translate this to French", "Summarize this article", etc.
+    - Encoder: A lightweight text encoder compresses those prompts into a condition embedding (a kind of task fingerprint).
+    - Decoder: A hypernetwork (specifically, a cascaded hyperconvolutional decoder) maps that embedding to LoRA weight matrices.
+    - These LoRA weights are then plugged into the base LLM, instantly adapting it to the task.
+- Why it matters 
+    - Prompt-conditioned adaptation is an alternative to fine-tuning.
+    - You don’t need gradient-based learning per task anymore.
+
+
+[**PAROAttention: Pattern-Aware ReOrdering for Efficient Sparse and Quantized Attention in Visual Generation Models**](https://arxiv.org/pdf/2506.16054)
+- Problem?
+- Visual generation is hard for transformers due to high computation costs
+- Pattern-Aware ReOrdering (PARO)
+    - Step 1: Analyze attention patterns
+    - Step 2: Reorder the tokens using Pattern-Aware ReOrdering (PARO)
+        - Group or rearrange tokens based on their attention behavior.
+        - Similar to how CNNs use local receptive fields.
+    - Step 3: Apply sparsification and quantization
+        - Ignore some blocks (sparsity)
+        - Use lower precision (quantization)
+- Main Idea:
+    - Rearrange tokens in a smarter way so that attention becomes block-wise and local, like how convolution works in CNNs.
+
+[**Vision-Guided Chunking Is All You Need: Enhancing RAG with Multimodal Document Understanding**](https://arxiv.org/pdf/2506.16035)
+- Problem?
+- PDFs are hard to chunk correctly using just text.
+- Solution
+    - multimodal document chunking using Large Multimodal Models (LMMs) — models that can understand both text and visuals.
+- How?
+    - Step 1: Use multimodal models (LMMs)
+        - "see" the document structure
+    - Step 2: Process documents in batches of pages
+        - This helps preserve semantic context across pages 
+    - Step 3: Preserve cross-batch context
+        - keep track of previous batch information, so the model knows what came before 
