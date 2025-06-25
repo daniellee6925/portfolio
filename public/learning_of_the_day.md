@@ -1635,3 +1635,12 @@
 - How do you access a parent class method?
     - By Inheriting the parent class in the child class, then accessing the parent method in child class.
     - By Inheriting the parent class in the child class, and using super().
+
+**Learning of the day (6/24)**
+- Learning
+- How do you debug Python code in production systems?
+    - Monitoring logs 
+    - Enable metrics and alerts using tools such as Prometheus 
+    - Replicate in staging: reproduce production like env in local 
+
+ 

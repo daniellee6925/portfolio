@@ -247,3 +247,17 @@
         - This helps preserve semantic context across pages 
     - Step 3: Preserve cross-batch context
         - keep track of previous batch information, so the model knows what came before 
+
+[**LongWriter-Zero: Mastering Ultra-Long Text Generation via Reinforcement Learning**](https://arxiv.org/pdf/2506.18841)
+- Problem?
+- ultra-long text generation is usually done through SFT
+    - expensive and hard to scale
+    - Produces unnatural, repetitive, or boring text
+- Solution - LongWriter-Zero
+- Instead of "teaching" via synthetic data, use reinforcement learning (RL) to:
+    - Train from scratch (no annotated/synthetic data)
+    - Encourage the LLM to reason, plan, and refine its writing during generation
+- Three Reward Models
+    - Length RM: To guide models toward producing responses of appropriate length
+    - Writing RM: The writing reward model is trained on manually-labeled preference data over writing-related prompt 
+    - Format RM: To enforce structural integrity and reduce redundancy
