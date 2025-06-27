@@ -1669,3 +1669,21 @@
     - This is commonly used for storing trained machine learning models, caching data, or persisting Python objects between program runs. 
 - What advantages do NumPy arrays offer over (nested) Python lists?
     - NumPy array is faster and you get a lot built-in functions, can do “vectorized” operations 
+
+ **Learning of the day (6/27)**
+- Learning
+- Explain inheritance in Python with an example
+    - It allows one class to gain all attributes and methods of another class. 
+    - Class we are inheriting from is called the super class and the class inheriting is called the child class
+    - You can use by calling super in init 
+    - ex: Inherting nn.Module 
+- What is polymorphism in Python?
+    - Polymorphism means the ability to take multiple forms. For instance, if the parent class have a method named ABC, the child class can also have a different method named ABC
+- Explain the differences between Flask and Django?
+    - Flask is simpler and more flexible, great for custom or smaller projects. Django is more powerful out of the box, better suited for bigger applications that benefit from speed and consistency in development.
+- What is PEP?
+    - PEP stands for Python Enhancement Proposal. It is a set of rules that specify how to format Python code for maximum readability.
+- What are Python decorators?
+    - Python decorators are special functions that let you modify and extend the behavior of other functions or methods without changing their code
+    - usually used for logging, checks, timing, caching
+    - decorator takes function as an input, wraps it in another function, and adds some behavior
