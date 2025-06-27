@@ -1643,4 +1643,29 @@
     - Enable metrics and alerts using tools such as Prometheus 
     - Replicate in staging: reproduce production like env in local 
 
- 
+ **Learning of the day (6/25)**
+- Learning
+- List vs Tuple
+    - Lists: Mutable, two blocks of memory, element can be modified easily 
+    - Tuple: Immutable, one block of memory, element cannot be changed 
+- Array vs Lis
+    - Array: imported for numpy, size cannot be resized, uniform data type, optimized for arithmetic 
+- How is memory managed in python?
+    - Memory management is handled by the Python private heap space. User doesn't have access 
+    - Python has built in garbage collector which recycles all unused memory 
+
+ **Learning of the day (6/26)**
+- Learning
+- How do you achieve multi-threading in python?
+    - Python has a construct called the Global Interpreter Lock (GIL).
+    - The GIL makes sure that only one of your threads can execute at any one time
+    - true parallel execution of threads is limited when working with CPU-bound tasks.
+- What are lambda functions?
+    - anonymous one line function which returns an object 
+    - use where functions are passed as arguments, such as with map(), filter(), or sorted().
+- What is pickling and unpickling?
+    - Pickling is the process of converting a Python object (such as a list, dictionary, or custom object) into a byte stream.
+    - Unpickling is the reverse process: converting the byte stream back into the original Python object.
+    - This is commonly used for storing trained machine learning models, caching data, or persisting Python objects between program runs. 
+- What advantages do NumPy arrays offer over (nested) Python lists?
+    - NumPy array is faster and you get a lot built-in functions, can do “vectorized” operations 

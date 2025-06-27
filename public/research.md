@@ -261,3 +261,35 @@
     - Length RM: To guide models toward producing responses of appropriate length
     - Writing RM: The writing reward model is trained on manually-labeled preference data over writing-related prompt 
     - Format RM: To enforce structural integrity and reduce redundancy
+
+[**GRPO-CARE: Consistency-Aware Reinforcement Learning for Multimodal Reasoning**](https://arxiv.org/pdf/2506.16141)
+- Problem?
+- Existing RL methods focus only on final answer accuracy, which leads to:
+    - Shortcut behaviors
+    - Low logical coherence between intermediate reasoning steps and answers
+- GRPO-CARE: A Consistency-Aware Reinforcement Learning Method
+    - Optimize not just answer accuracy but also reasoning coherence
+- Two reward components:
+    - Answer Correctness (base reward)
+    - Consistency Bonus:
+        - Measures how well the reasoning logically leads to the answer
+        - Uses a reference model (slowly updated) and peer comparison across samples
+            - The reference model (Mentor Model) estimates how plausible the answer is given the reasoning.
+            - For each training instance, GRPO-CARE generates multiple reasoning paths across a batch and compares the reasoning-to-answer likelihood of each path to others in the group.
+        - Replaces KL penalties
+
+[**GRPO-CARE: Consistency-Aware Reinforcement Learning for Multimodal Reasoning**](https://arxiv.org/pdf/2506.19697)
+- Problem?
+- Activation outliers break quantization, especially 4-bit quantization, which is critical for efficient on-device deployment
+- Solution: Prevent Outliers at the Source
+    - Instead of fixing outliers after training, u se a proactive training method called:
+    - Outlier-Safe Pre-Training (OSP)
+- How?
+    - Muon Optimizer
+        - A new optimizer that removes “privileged” activation pathways (common in Adam or Adafactor), which can cause outliers.
+    - Single-Scale RMSNorm
+        - Standard RMSNorm uses channel-wise normalization, which can amplify specific dimensions.
+        - This version uses a single global scale, preventing individual channels from blowing up.
+    - Learnable Embedding Projection
+        - Embedding layers often introduce high-magnitude activations.
+        - learn to redistribute the activation range, smoothing out potential spikes.
