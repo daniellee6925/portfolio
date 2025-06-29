@@ -293,3 +293,21 @@
     - Learnable Embedding Projection
         - Embedding layers often introduce high-magnitude activations.
         - learn to redistribute the activation range, smoothing out potential spikes.
+
+[**Where to find Grokking in LLM Pretraining? Monitor Memorization-to-Generalization without Test**](https://arxiv.org/pdf/2506.21551)
+- Grokking
+    - Model's test performance keeps improving long after the training loss has plateaued.
+    - It has mostly been observed in tiny models trained on toy problems, leaving its relevance to large models unclear.
+- Findings
+    - Grokking is Asynchronous Across Tasks
+        - Different downstream tasks “grok” at different stages in pretraining.
+    - Pathways (Expert Routes) Become More Structured
+        - In a Mixture-of-Experts (MoE) model:
+        - Over time, these pathways evolve:
+            - From: Random + per-instance
+            - To: Structured + shared across examples
+        - Even though loss is flat, the internal routing becomes more efficient and generalizable.
+    - Pathway Complexity Decreases
+        - For a given example, the number of distinct experts used goes down.
+        - Suggests the model is moving from memorizing idiosyncrasies to learning reusable structure → key signal of generalization.
+

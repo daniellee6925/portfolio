@@ -1687,3 +1687,19 @@
     - Python decorators are special functions that let you modify and extend the behavior of other functions or methods without changing their code
     - usually used for logging, checks, timing, caching
     - decorator takes function as an input, wraps it in another function, and adds some behavior
+
+ **Learning of the day (6/27)**
+- Learning
+- What is init?
+    - Init is a method in a python class. This method automatically called to allocate memory when a new object, instance of a class is created
+- What is a ternary operator?
+    - if a way of writing conditional statements in python
+    - true-value if condition else false-value 
+- Global vs local variables
+    - Global: variables declared outside a function or in a global space. These variables can be accessed by any function
+    - Local: variables declared inside a function. These variables can only be accessed by the function in which it is defined in
+- What is @property?
+    - It is a python decorator that it used to define a function that behaves like an attribute. It allows you to access a method without calling it like a regular function. You can call by doing object.func_name
+- How is try/except used in Python?
+    - try/except is used to handle errors and prevent the program from crashing. You place the code that might error in the try block and if there is an error, you handle it with code in the except block.
+    
