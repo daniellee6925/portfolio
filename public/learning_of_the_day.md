@@ -1688,7 +1688,7 @@
     - usually used for logging, checks, timing, caching
     - decorator takes function as an input, wraps it in another function, and adds some behavior
 
- **Learning of the day (6/27)**
+ **Learning of the day (6/28)**
 - Learning
 - What is init?
     - Init is a method in a python class. This method automatically called to allocate memory when a new object, instance of a class is created
@@ -1702,4 +1702,17 @@
     - It is a python decorator that it used to define a function that behaves like an attribute. It allows you to access a method without calling it like a regular function. You can call by doing object.func_name
 - How is try/except used in Python?
     - try/except is used to handle errors and prevent the program from crashing. You place the code that might error in the try block and if there is an error, you handle it with code in the except block.
-    
+
+ **Learning of the day (6/29)**
+- Learning
+- What is a dictionary?
+    - Built in data structure that stores data as key-value pairs. It is useful when you associate pieces of data together. Get and put are usually done in constant time.  
+- How would you check if a key exists in a Python dictionary?
+    - has_key(), if "key" in hashmap   
+- How does hashing work?
+    - You put the input value into a hash function which outputs a fixed-sized value which decides where the value is stored in memory
+- How would you make a deep copy in Python?
+    - when we use "=" we are not making a copy, we are just referencing the same object. Use deepcopy function from the copy module in python
+- How would you achieve memoization in Python?
+    - Memoization is a technique used to cache expensive function calls so that when the same input occurs again, the results can be returned immediately. You can use a dictionary to store the cached values and use a decorator around a function.
+
