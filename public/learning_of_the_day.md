@@ -1716,3 +1716,28 @@
 - How would you achieve memoization in Python?
     - Memoization is a technique used to cache expensive function calls so that when the same input occurs again, the results can be returned immediately. You can use a dictionary to store the cached values and use a decorator around a function.
 
+ **Learning of the day (6/30)**
+- Learning
+- What is a Python Docstring?
+    - Special type of string used to document code. Triple quotes, used in the first line of a function.  
+- Explain the difference between a generator and an iterator in Python.
+    - All generators are iterators, but not all iterators are generator
+    - generator is a simpler way to create an iterator using a function with yield or a generator expression.
+    - iterator is any object that implements the __iter__() and __next__() methods.
+- What is defaultdict in Python?
+    - Automatically assigns a default value to a key avoiding KeyError
+- What are Python modules?
+    - files that contain Python code — functions, classes, or variables — which can be reused in other Python programs.
+- Decoding-Time Scaling
+    - Also known as test-time scaling, this refers to improving a model’s performance during inference (i.e., when generating output), without changing its weights or retraining it.
+    - Use more compute, samples, or smart decoding strategies at generation time to get better results.
+        - Best-of-N sampling (BoN): Generate N outputs and pick the best one.   
+        - Beam search: Explore multiple promising output paths at once.
+        - Tree search / planning: Simulate multiple reasoning paths before choosing.
+        - Multi-agent sampling: Have multiple agents (models or prompts) try and compare answers.
+        - Reflection triggers: Dynamically adjust behavior depending on how well the model is doing.
+- Self-Refinement
+    - Self-refinement is when a model reviews and improves its own output by:
+        - Reflecting on its reasoning
+        - Correcting errors
+        - Rewriting or revising answers
