@@ -1712,7 +1712,7 @@
 - How does hashing work?
     - You put the input value into a hash function which outputs a fixed-sized value which decides where the value is stored in memory
 - How would you make a deep copy in Python?
-    - when we use "=" we are not making a copy, we are just referencing the same object. Use deepcopy function from the copy module in python
+    - when we use "=" we are not making a copy, we are just referencing the same object. Use deepcop l,lokjhxcol;p'/y function from the copy module in python
 - How would you achieve memoization in Python?
     - Memoization is a technique used to cache expensive function calls so that when the same input occurs again, the results can be returned immediately. You can use a dictionary to store the cached values and use a decorator around a function.
 
@@ -1741,3 +1741,26 @@
         - Reflecting on its reasoning
         - Correcting errors
         - Rewriting or revising answers
+
+ **Learning of the day (7/1)**
+- Learning
+- What is the difference between “is” and “==”?
+    - is checks identity, == checks equality
+-  Does python call by reference or call by value?
+    - when you pass a variable to a function, you are passing the reference to the object. If the object is mutable, the original will be changed
+- What does “self” refer to in a class?
+    - self refers to the instance of the class. It lets methods access and modify the object's own attributes and behavior  
+
+ **Learning of the day (7/2)**
+- Learning
+- What ORMs have you used in Python?
+    -  Object-Relational Mapping lets you treat database tables like Python classes, and rows like instances 
+- What is the difference between a module and a package?
+    - A module is a file (or collection of files) that can be imported together.
+    - A package is a collection of modules 
+- What is the difference between append and extend?
+    - Append adds an element to the list
+    - extend adds the elements of another list to the list
+- How to combine two lists into a list of tuples?
+    - use the zip function
+     
