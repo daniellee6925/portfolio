@@ -1763,4 +1763,16 @@
     - extend adds the elements of another list to the list
 - How to combine two lists into a list of tuples?
     - use the zip function
-     
+    
+ **Learning of the day (7/7)**
+- Learning 
+- Give an example of a ternary operator
+    - One line if/else statemet
+- try, except, finally
+    - try: try to do tis
+    - except: do this if it fails 
+    - finally: always do this 
+- What Are Nolocal and Global Keywords Used For?
+    - nonlocal and global keywords are used to modify variables outside the current scope    
+    - global: modify global variable 
+    - nonlocal: modify outer variable in nested functions

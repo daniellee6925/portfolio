@@ -311,3 +311,16 @@
         - For a given example, the number of distinct experts used goes down.
         - Suggests the model is moving from memorizing idiosyncrasies to learning reusable structure → key signal of generalization.
 
+
+[**GLM-4.1V-Thinking: Towards Versatile Multimodal Reasoning with Scalable Reinforcement Learning**](https://arxiv.org/pdf/2507.01006)
+- Importance?
+    - 1. Powerful Vision Backbone
+        - They first trained a strong visual model on a huge dataset.
+        - This gives the model a high "ceiling" for potential performance (a good foundation to build on).
+    2. Reinforcement Learning with Curriculum Sampling (RLCS)
+        - They use RL, not just supervised learning
+        - But they don’t throw all tasks at the model at once
+        - Instead, they use a curriculum — gradually increasing task difficulty, like how a teacher teaches math from easy to hard
+        - This unlocks stronger reasoning across many multimodal tasks.
+- GLM-4.1V-Thinking shows that:
+    - You don’t need a massive model to compete at the top — smart training strategies like RLCS matter more
