@@ -324,3 +324,22 @@
         - This unlocks stronger reasoning across many multimodal tasks.
 - GLM-4.1V-Thinking shows that:
     - You don’t need a massive model to compete at the top — smart training strategies like RLCS matter more
+
+[**MemOS: A Memory OS for AI System**](https://arxiv.org/pdf/2507.03724)
+- Problem?
+    - LLMs Have No Real Memory System
+        - Mostly "remember" information in their static weights or in short-lived context (like the current conversation).
+        - Can’t store long-term user preferences, learn continually, or evolve knowledge over time.
+- Key Idea: 
+    - Treat Memory Like a Real System Resource
+    - similar to operating system (OS) manages CPU, RAM, and disk in a computer
+- What Can MemOS Do?
+    - Store and manage memory over time — not just in the current session
+    - Compose and evolve memory (e.g., merge similar knowledge, update beliefs)
+    - Bridge retrieval with learning — move useful info from external memory into the model itself
+- Why it matters
+    - It gives models the ability to store, retrieve, update, and organize knowledge over time — not just respond to what’s in the current prompt.
+
+
+
+

@@ -1776,3 +1776,16 @@
     - nonlocal and global keywords are used to modify variables outside the current scope    
     - global: modify global variable 
     - nonlocal: modify outer variable in nested functions
+
+ **Learning of the day (7/8)**
+- Learning 
+- What Is GIL and What Are Some of the Ways to Get Around It?
+    - GIL stands for the Global Interpreter Lock and it is a mechanism Python uses for concurrency. 
+    - The major downside of GIL is that it makes threading not truly concurrent.
+    - use the multiprocessing module: lets you spwan new python processes
+- What Are Metaclasses and When Are They Used?
+    - advanced features that allow you to control the behavior of class creation — essentially, they are the “classes of classes.”
+    - If a class defines how an object behaves, then a metaclass defines how a class behaves.
+- What Are Type Annotations? What Are Generic Type Annotations?
+    - let you specify expected data types of variables, function arguments, and return values. 
+    - Python doesn't raise runtime errors but tools like mypy and IDEs can prevent wrong types.
