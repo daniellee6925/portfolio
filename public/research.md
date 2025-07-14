@@ -341,5 +341,17 @@
     - It gives models the ability to store, retrieve, update, and organize knowledge over time — not just respond to what’s in the current prompt.
 
 
-
-
+[**MemOS: A Memory OS for AI System**](https://arxiv.org/pdf/2507.03724)
+- Problem?
+    - The two matrices A and B often have different magnitudes.
+        - This causes instability during training:
+        - Gradients don’t flow well
+        - Learning becomes noisy or inefficient
+- Solution
+    - Instead of using two separate matrices, SINGLORA uses just one matrix 
+        - ΔW=U⋅U^T
+    - This is called a self-outer product — a low-rank update formed by multiplying a matrix by its own transpose.
+- Benefits
+    - No scale mismatch — there’s only one matrix, so no inter-matrix conflicts
+    - Simpler optimization — training is more stable
+    - Fewer parameters — almost half as many as LoRA

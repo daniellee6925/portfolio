@@ -1789,3 +1789,15 @@
 - What Are Type Annotations? What Are Generic Type Annotations?
     - let you specify expected data types of variables, function arguments, and return values. 
     - Python doesn't raise runtime errors but tools like mypy and IDEs can prevent wrong types.
+
+ **Learning of the day (7/13)**
+- Learning 
+- What Are Generator Functions? 
+    - special function that yield values one at a time instead of returing all of them at once.
+    - use yield instead of return. 
+    - everytime the function is called, it picks up where it left off
+- What are *args and **kwargs in Python functions?
+    - both let you write functions that can take in variable number of arguments
+    - args (non-keyword arguments): pass a variable number of positional arguments (1, 2, 3)
+    - kwargs (keyword arguments): pass a variable number of named (keyword) arguments. (a=1, b=2)
+- How do you define abstract classes in Python?
