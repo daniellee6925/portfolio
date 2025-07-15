@@ -1801,3 +1801,16 @@
     - args (non-keyword arguments): pass a variable number of positional arguments (1, 2, 3)
     - kwargs (keyword arguments): pass a variable number of named (keyword) arguments. (a=1, b=2)
 - How do you define abstract classes in Python?
+    - Use abstract classes when you want to ensure that subclasses follow a specific structure, especially in large codebases or frameworks.
+
+ **Learning of the day (7/14)**
+- Learning 
+- What Are Literals in Python?
+    - Literals are the raw, hardcoded values that you assign to variables or use in expressions
+- What’s Slicing?
+    - Slicing is a process to retrieve parts of a string, array, list, or tuple. Basically, we pass a start and end index to specify the position of data we’re interested in. 
+-  Which Algorithm Is Used by the 'sort()’ and 'sorted()' Functions?
+    - The sort() and sorted() functions implement the Timsort algorithm. This sorting algorithm is very stable and efficient. The value of Big O in its worst case is O(N log N).
+- What’s List Comprehension? Give an Example.
+    - Quick way to create python list 
+    - [x for x in range(1, 10)] 
