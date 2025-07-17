@@ -1814,3 +1814,20 @@
 - What’s List Comprehension? Give an Example.
     - Quick way to create python list 
     - [x for x in range(1, 10)] 
+
+ **Learning of the day (7/15)**
+- Learning 
+- What’s Monkey Patching in Python?
+    - dynamically modifying or extending the clsss at runtime 
+    - class.func = monkey_patch_func
+    - temporarily override behavior 
+- How to avoid nested loops:
+    - use product function
+    - for a, b, c in product(list_a, list_b, list_c):
+
+ **Learning of the day (7/16)**
+- Learning 
+- Garbage collection in python
+    - done by reference counting.
+    - counts the number of references for each object.
+    - if the count is zero, it is garbage collected
