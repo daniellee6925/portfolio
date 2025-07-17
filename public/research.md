@@ -355,3 +355,19 @@
     - No scale mismatch — there’s only one matrix, so no inter-matrix conflicts
     - Simpler optimization — training is more stable
     - Fewer parameters — almost half as many as LoRA
+
+[**REASONING OR MEMORIZATION? UNRELIABLE RESULTS OF REINFORCEMENT LEARNING DUE TO DATA CONTAMINATION**](https://arxiv.org/pdf/2507.10532)
+- Main Findings:
+    - Qwen2.5 is great at math, but likely because it saw the answers during pretraining (data contamination).
+    - So when you evaluate it on benchmarks like MATH500, the results are inflated.
+    - This means claims like “random RL rewards work” may be flawed.
+- New benchmark: RandomCalculation:
+    - Fully synthetic math problems with guaranteed no leakage
+    - Problems can be arbitrarily long or difficult
+- When they re-run RL on RandomCalculation:
+    - Only accurate rewards improve the model
+    - Random or wrong rewards don’t help at all
+- Key Takeaways:
+    - Don’t trust benchmark results if the model may have seen the answers during training.
+    - Use clean, synthetic datasets to evaluate RL methods reliably.
+    - Claims that random rewards improve reasoning don’t generalize beyond contaminated benchmarks or certain models like Qwen2.5.
