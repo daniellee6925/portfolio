@@ -39,7 +39,8 @@ const Navbar = () => {
             <li><a className="font-Ovo hover:text-violet-700" href="/#about">About Me</a></li>
             <li><Link  className="font-Ovo hover:text-violet-700" href="/projects">Projects</Link ></li>
             <li><Link className="font-Ovo hover:text-violet-700" href="/learn">Learning of the Day</Link></li>
-             <li><Link className="font-Ovo hover:text-violet-700" href="/paper">Paper Reviews</Link></li>
+            <li><Link className="font-Ovo hover:text-violet-700" href="/paper">Paper Reviews</Link></li>
+            <li><Link className="font-Ovo hover:text-violet-700" href="/FSA">Path to FSA</Link></li>
         </ul>
 
         <div className='flex items-center gap-4'>
@@ -64,6 +65,7 @@ const Navbar = () => {
             <li><Link className="font-Ovo" onClick ={closeMenu} href="/projects">Projects</Link></li>
             <li><Link className="font-Ovo" onClick ={closeMenu} href="/learn">Learning of the day</Link></li>
             <li><Link className="font-Ovo" onClick ={closeMenu} href="/learn">Paper Reviews</Link></li>
+            <li><Link className="font-Ovo" onClick ={closeMenu} href="/FSA">Path to FSA</Link></li>
         </ul>
 
       </nav>
