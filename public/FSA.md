@@ -1,2 +1,99 @@
 **Learning of the day (7/18)**  
-- research 
+- Overall: Group Term Life and Supplemental benefits 
+- Various provisions - Benefit, Plan, Taxation, Regulation
+- Key Question: Imputed Income Calc (numerical question)
+    - all benefits over $50,000 & subtract EE contributions
+    - for supplemental, not subject to section 79 if:
+        - 1. no employer subsidies 
+        - 2. straddle test - premium step rates are all above or all below 
+    - AD&D and terminated EE don't have imputed benefits 
+    - EE contribution should be excluded based on expected claim rates
+        - There can be a credibility blend btwn actual and expected 
+        - Unisex rates can be calculated based on % blen btwn M/F
+        - Round rates to the nearest cent for each calc (not at the end)
+
+**Learning of the day (7/18)**  
+- Overall: Group Health, Group Dental, Drug Benefits 
+- Dimension of Medical Plans 
+    - Definition of **Covered Services** and conditions 
+    - Degree of insured **Cost Sharing** 
+    - Relation with **Providers**
+- Purpose of Insured Cost Sharing 
+    - Control of **U**tilization
+    - Control of **C**osst
+    - Control of **R**isk to the insurer
+- **Provider Risk Sharing** (PCS DIG D)
+    - Bouns **P**ool: bonus if util was below target 
+    - **C**apitation: provider performs all srvices for set amount pmpm
+    - Fee **S**chedule: sheet with predetermined charges
+    - Per **D**iem: set payment for day, not per service for IP
+    - **I**ntegrated delivery: insurer owns or employs the providers 
+    - Diagnosis Related **G**roup (DRG): same payment for same diagnosis regardless of treatment
+    - **D**iscount for billed charges
+- **Exclusion** (COMET WR WP)
+    - **C**osmetic Surgery
+    - **O**ther specified services
+    - not **M**edically necessary
+    - **E**xperimental treatment
+    - **T**ransplants
+    - Servcies due to act of **W**ar
+    - Provider **R**elated to patient
+    - **W**ork related injury
+    - **P**ayment is not otherwise required (free gov. program)
+- Managed Care Plans
+    - HMO
+    - EPO (exclusive provider org): similar to HMO but diff. regulation
+    - POS (point of service): similar to HMO but OON
+    - PPO
+
+-Dental Insurance
+    - 4 classes
+        - I: preventive
+        - II: Basic
+        - III: Major
+        - IV: Orthodontics
+    - Diff cost sharing for each class.
+    - Reimbursement Models
+        - Indemnity Plan (FFS)
+        - Dental PPO
+        - Dental HMO
+
+- Pharmacy Benefits in US
+- **Factors that influence prescription drug costs** (PAP STOP BD)
+    - Prescription drug **P**ipeline
+    - **A**ging population
+    - Brand **P**atnent protection 
+    - **S**pecialty drugs
+    - Increase in awareness and **T**esting for diseases
+    - Member cost sharing **O**ffset
+    - **P**ersonalized medicine
+    - **B**iologics
+    - **D**irect consumer Advertising
+
+- Gov. Plan
+    - Employer Group Waiver Plan (EGWP)
+        - customized medicare part D plan for retirees
+        - provide rricher benefis at lower costs
+    - Retiree Drug Subsidy (RDS)
+        - federal subsidy of 28% of all allowed drug costs
+    
+- Pharmacy Benefit Framework Entities (7)
+    - Manufacturer
+    - Wholesaler 
+    - Pharmacies (retail)
+    - Pharmacy benefit manager
+    - Thrid Party Payers 
+    - Beneficiaries 
+    - Prescribing healthcare providers 
+- Types of Drugs
+    - Generic
+    - Brand
+    - Specialty
+    - Biologic
+    - Compound
+    - Over the Counter 
+- Prescription Drug Lifecycle
+    - R&D - 15yrs
+    - Patents (brand) - 12yrs
+    - Generic Excluding Period - 6mths: only one other manufacturer 
+    - Generic
