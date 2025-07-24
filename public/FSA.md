@@ -28,6 +28,12 @@
     - Control of **U**tilization
     - Control of **C**osst
     - Control of **R**isk to the insurer
+
+- **Usual, Customary, Reasonable**
+    - lowest of provider's usual charges
+    - customary to the geographic region
+    - reasonable level for the services
+
 - **Provider Risk Sharing** (Provider Cost Sharing DIG Discounts)
     - Bouns **P**ool: bonus if util was below target 
     - **C**apitation: provider performs all srvices for set amount pmpm
@@ -362,3 +368,75 @@
         - LTC: 2% monthly 
         - Catastrophic: 25% single - difficult to define diseases
         - Terminal: 25-50% single
+
+**Learning of the day (7/22)**  
+- Estimating medical claim costs
+- Overview
+    - **How to collect data**
+    - **how to normalize and project data**
+    - **how to calculate gross and net claim costs**
+- Data Sources
+    - Own experience if credible 
+        - 1. Medical Claim Systems
+        - 2. PBM data
+        - 3. Premium billing and elligibility data
+        - 4. Provider contract system 
+- Variables to be considered 
+    - Financial info: type of claim
+    - Experience period: seasonality, basis
+    - Exposure basis: num of emp, contracts, etc.
+    - Frequency of data collection
+    - **How much, when, who, how often?**
+
+-**Normalizing data for important rating variables** (U GRAB CO)
+    - **U**tilization management programs
+    - **G**eographic area
+    - **R**eimbursement Arrangements
+    - **A**ge and gender
+    - **B**enefit plan
+    - **O**ther risk adjusters
+    - **C**haracteristics of group
+
+- Trend: unit cost, utilization, mix of service
+- Secular Trend: percent change only from factors that affect first dollar, 100% benefits (long-term)
+- Leveraging - deduct and copays 
+
+- Methods of Adjusting Manual Base Rates
+    - Claim Probability Distributions (CPD)
+        - Use: deductibles, coninsurance, OOP
+        - Users: traditional insurance, HDHP, Major medical with DDL, CI, and OOP
+        - Calc: summarize annual claims on pm basis, group members in cost ranges
+    - Actuarial Cost Models 
+        - Use: copay and limits
+        - Users: HMOs, PPOs, POS and other
+        - Calc: 1/12 of the product of annual freq x allowed charges - copayments
+
+- Small Group Considerations
+    - HIPAA: 2- 50 EE's
+    - ACA: 50-100 EE's
+    - PACE act allows state to choose
+    - majority of small groups do not offer group medical
+    - Under ACA, groups 50-100 required to offer coverage or pay fee 
+        - groups under 25 - offered temp tax credits for offering coverage
+    - HIPPA
+        - guaranteed acceptance and renewal
+    - ACA
+        - Essential Health Benefit, benefit (metal) tiers
+        - Elimination of rating variables
+        - Younger/healtier group subsidize older/less healthy groups
+
+- Factors to consider to understand drivers of experience 
+    - Financial Viability of group 
+    - Industry/Occupation
+    - Group size
+    - Workers Compensation
+    - Participation
+    - Employer contributions
+    - prior coverage 
+
+- Underwriting for SG
+    - Entity - licensed employer
+    - participation and contribution requirements 
+    - service area
+    - employee eligibility requirements
+    - late entrants 
