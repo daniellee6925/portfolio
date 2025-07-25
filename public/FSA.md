@@ -388,7 +388,7 @@
     - Frequency of data collection
     - **How much, when, who, how often?**
 
--**Normalizing data for important rating variables** (U GRAB CO)
+- **Normalizing data for important rating variables** (U GRAB Other Characteristics)
     - **U**tilization management programs
     - **G**eographic area
     - **R**eimbursement Arrangements
@@ -440,3 +440,104 @@
     - service area
     - employee eligibility requirements
     - late entrants 
+
+**Learning of the day (7/24)**  
+- Overview
+    - **Dental Coverage Info and Provider Reimbursement Method**
+    - **How to calculate gross and net claim costs for dental claims**
+
+- Data Sources
+    - if credible, use your own exp data
+    - if not credible (Dental CLaim Require Other)
+        - **D**atabases - fee level info
+        - **C**onsulting firms - utilzation stats
+        - **R**einsurers/TPA - charge leven and util info
+        - **O**ther carriers - actuarial memoranda and rate filings 
+
+- Data Quality considerations: ASOP 23
+
+- Claim Cost Factors
+    - 1. The plan
+    - 2. The network and reimbursement levels
+    - 3. The insured population
+
+- Dental Coverage
+    - Highly discretionary (anti-selection)
+    - Cost sharing: reduce cost, incentivize insured to choose less expensive coverage
+    - Preventive care saves on total cost
+    - May have annual and lifetime maximum (other than children for IFP/SG)
+
+- Period of Coverage
+    - Levearging impact of deductibles
+    - Dampening impact of max limits (as annual max limit decrease, the impact of trend on expected claim cost decrease)
+
+- Provider Reimbursement Methods
+    - 1. Fee-for-service
+        - Reasonable and Customary
+        - lower of high percentile of national fees (reasonable) OR high percentile of local fees (customary)
+        - permit "balance bill" 
+    - 2. Dental PPO
+        - insurer lists dentist in network for reduced fee schedule
+        - Balance billing NOT allowed
+        - Insures increase schedule every 2-4 years
+            - constraints and spikes
+        - fee schedule don't control util or intensity
+    - 3. Capitation
+        - Dental HMO plans
+        - paid amount per member enrolled
+        - capitation rate
+            - 1. assumed util
+            - 2. allowed average payment per service
+        - providers may ask for downside protection (not penalized if cost/util higher than expect to avoid undertreating)
+    - critical components of revenue are
+        - patient payments for consinsurance
+        - non-covered services 
+
+- Discount Cards
+    - not insurance, just discounted pricing
+    - membership fee
+    - Advantages to insurers: wider range of solutions provided, keep up with competiton, strengthen clout with dentists
+
+- Care management
+    - effectiveness depends on method used to reimburse
+        - FFS: incentive to over-treat patients
+        - Capitation Basis: incentive to under-treat patients
+    - Preauthorization
+        - manage util for FFS
+    - Self-management
+        - DHMOs use quality assurance mechanisms
+
+- Claim Cost Factors 
+    - Age and Gender 
+    - Geographic Area
+    - Group Size
+    - Prior Coverage and Pre-Annoucement
+        - no prior: high initial util
+        - preannouncement: employee postpone and use later
+    - Employee Turnover
+        - higher turnover: higher util 
+    - Occupation or Income 
+        - Some professionals use more, related to benefit awareness
+    - Contribution and Participation
+        - Less participation, higher costs 
+
+- ACA considertions 
+    - Pedicatric not required (unless SG or IFP)
+    - inclusion of maximum OOP provision
+    - No Actuarial Value for stand-alone dental 
+    - Little to no subsidy for stand-alone dental (reduce affordability)
+    - Max OOP must be combined with medical and dental (when not stand-alone dental)
+    - Hard to get dental with medical 
+
+- Why get group?
+    - group rate discounts and underwriting, pretax payroll deduction of premiums
+    - Lots of anti-selection
+    - lifetime deductible: keep coverage
+    - Elimination (waiting) periods
+    - particpation requirements
+    - 'Cafeteria plan' selections - less anti-selection
+
+- Experience Rating
+    - Dental insurance more credible than medical at same group size
+    - large claims and pooling not part of exp rating 
+    
