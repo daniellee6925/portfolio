@@ -540,4 +540,206 @@
 - Experience Rating
     - Dental insurance more credible than medical at same group size
     - large claims and pooling not part of exp rating 
-    
+
+
+**Learning of the day (7/25)**  
+- Overview
+    - **What are the key components to Trend**
+    - **How to calculate trends**
+
+- 3 purposes of trend
+    - financial reporting
+        - determine financial peformance of a given period
+    - pricing 
+        - Trend calc basis
+            - Eligible: bill charges before provider contracts or discounts
+            - Allowed: eligible after provider contracts/discounts before cost sharing 
+            - Net paid: bottom line after cost-sharing 
+    - experience analysis
+        - based on retrospective claims 
+        - techniques to incorporate unreported claims 
+            - use standard set of completion factors
+            - equal runoff method: similar time in prior period
+
+- **Component Method** (Use Past COst to Approximate Levels, U PS CO AL)
+    - **U**tilization
+    - **P**opulation shift
+    - **S**tructural changes
+    - **C**ost 
+    - **O**ne-time changes
+    - **A**lternative payment methods 
+    - **L**everaging
+
+- Core cost trend
+    - rate of increase in the covered cost per service 
+        - unit cost trend
+        - severity
+        - mix of services
+
+- Core Utilization trend
+    - utilization vary by weekday and holiday
+        - Monday highest
+        - Friday lowest
+        - less prescriptions on wednesdays
+
+- One time change
+    - response to specific, one time events
+        - return back to normal
+            - flu season
+            - weather (hurricane)
+        - sustained change
+            - legislation
+            - internal changes: processes and procedures
+    - New technology
+        - 1. start up - util increase slowly
+        - 2. catch up - highest util
+        - 3. steady state
+        - 4. transistion - new tech 
+
+- population shifts
+    - underlying population shift due to leaving/entering members
+    - difficult to project for rapidly growing or new population
+        - 1. project composiiton of new pop
+        - 2. estimate pmpm based on util for similar members
+
+- Structural Changes
+    - changes in AV and insured's behavior
+    - Benefit Rush-Hush-Crush
+        - Rush: people rush to use benefits with outgoing plan 
+        - Hush: less usage in the next
+        - Crush: usage returns to normal, trend inflated 
+
+- Alternative Payment Methods
+    - Capitation
+    - Global Budgets: similar to capitation but based on total population
+
+- Leveraging
+    - trend on allowed amounts different than trend on paid amount
+
+- Monitorting
+    - how accurate were the original trend 
+    - which assumptions drive variation
+    - how can process be modified to be more accurate
+    - what other factors drove the trends
+
+- Component trend analysis
+    - common method but resource/data heavy
+    - alternative - regression technique: based on pmpm costs, normalized for key factors 
+
+- **ASOP 12: Risk Classification**
+- purpose: guidance to actuaries with respect to designing, reviewing, changing risk classification systems
+- **Considerations in selection of risk characteristics** (BLIP On Risk Characteristics)
+    - **B**usiness practices
+    - **L**aw applications
+    - **I**ndustry practices
+    - **P**racticality
+    - **O**bjectivity
+    - **R**elationship of risk characteristics and expected outcomes
+    - **C**ausality
+
+- considerations in estimating risk classes
+    - intended use
+    - actuairal considerations: adverse selection, credibility, practicality
+    - other considerations: legal compliance, industry practice, business practice
+    - reasonableness of results
+
+- testing the risk classification system
+    - long-term viability
+    - effect of adverse selection
+    - risk classes used for testing 
+    - effect of changes
+    - quantitative analysis
+
+- communication and dsiclosure
+    - prescribed statement of actuarial opinion not required
+    - deviation from standard: explain and justify any procedure that depart materially from these standards 
+
+- **ASOP 23 - Data Quality**
+- purpose: guidance to actuary for 
+    - selecting data 
+    - relying on data supplied by others
+    - reviewing data 
+    - using data
+    - appropriate disclousres regarding data quality
+
+- **Selection of data** (FR BAD CALCS)
+    - **F**easability and cost of alternative data
+    - **R**easonableness and comphrehensiveness
+    - **B**enefit to be gained from alt data
+    - **A**lternative data elements
+    - **D**esired data elements
+    - **C**urrent data 
+    - **A**ppropriateness for intended purpose
+    - **L**imiations
+    - **C**onsistency internal & external
+    - **S**ampling methods
+
+- Use of data
+    - professional judgment regarding:
+        - sufficient quality
+        - enhancement required, practicality of obtaining
+        - adjustment and asumptions applied
+        - material defects and action needed
+- **Communication** (SURe CALL it Reasonable)
+    - **S**ource of data
+    - **U**ncertain results or bias due to data quality including potential magnitude and nature
+    - **R**eliance on data and other info
+    - **C**oncerns unresolved
+    - **A**djustments or assumptions applied
+    - **L**imiations on work due to data quality
+    - **L**aws and regulations compliance
+    - **R**eviewd by actuary
+
+-**ASOP 25 - Credibility Procedures**
+- Purpose: guide actuaries in selection of a credibility procedure and assignemnt of credibility values
+- Recommended Practices 
+    - purpose of credibility
+        - 1. evaluate exp of the subject for potential use in setting assumptions without reference to other data
+        - 2. Improve estimate of the value being estimated
+    - selection of relevant experience
+    - professional judgement
+    - homogenity of data
+    - Things to consider
+        - produce reasonable results 
+        - appropriate for intended use 
+        - practical to implement
+    - should consider both subject and relavent experience
+    - predictive value of more recent experience is preferred
+
+- **ASOP 41- Actuarial Communication**
+- Definitions
+    - communication
+    - document: recorded from
+    - findings:  results of services
+    - report: docs available to an intended user that the actuary determnines relevant to the specific findings
+- Requirements
+    - scope of work: methods, assumptions, data
+    - form and content of communication: appropriate to particular circumstances/users
+    - clarity
+    - timing of communication: within reasonable period
+    - identification of resposible actuary
+- Recommended Practices 
+    - explanation of material differences
+    - oral communications: follow up with written
+    - responsibilities to other users
+    - retention of other material
+- **Disclosure** (ReQuired DISCLSUR)
+    - **R**isk and uncertainty
+    - **Q**ualification
+    - **D**ocuments comprising the report
+    - **I**nformation date 
+    - **S**ubsequent events
+    - **C**onflict of interest
+    - **L**imiations on the use or applicability
+    - **S**cope and intended purpose
+    - **U**sers
+    - **R**elied info that actuary doesn't assume responsibility
+- Assumptions or methods prescribed by law
+    - applicable law
+    - assumptions or methods prescribed
+    - report prepared in accordance
+- responsibility for assumptions and methods
+    - A: assumption or methd conflicts with actuary's judgement
+    - B: not qualified to judge reasonableness or cannot without substantial additional work
+- Deviation
+    - state the nature, rationale, and effect of such deviation
