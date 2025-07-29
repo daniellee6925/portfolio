@@ -743,3 +743,143 @@
     - B: not qualified to judge reasonableness or cannot without substantial additional work
 - Deviation
     - state the nature, rationale, and effect of such deviation
+
+**Learning of the day (7/27)**  
+- Overview
+    - **Experience Rating: prospective & retrospective**
+    - **Funding Methods**
+
+- theoretical considerations
+    - low frequency coverages
+    - widely varying claim sizes
+    - confidence interval
+    - experience due to statistical fluctuation 
+    - non-zero correlation between experience period and projection period
+    - typical measure: number of lives covered
+
+- practical considerations
+    - regulatory restrictions - certain group sizes
+    - competitive pressure
+    - administrative and managerial units
+    - added cost of experience ratiing and resulting gains
+    - effect on existing business
+    - management philosophy
+    - internally self consistent
+
+- Prospective
+    - claims
+        - first, develop estimate of incurred claims
+        - second, adjust and calculate claim experience
+        - incurred claims = Paid + (Ending Reserve - Starting Reserve)
+    - Adjustments to reduce effects of random variation (pooling methods)
+        - dampen random statistical fluctuations
+        - catastrophic claim pooling
+        - LR/Rate increase limits
+        - Credibility weighting
+        - multi-year averaging
+        - combination
+    - after pooling
+        - rate basis considerations
+        - Trend: factors impacting expected costs
+            - changes in gov. programs
+            - secular or cyclic trends in rates
+            - mortality trends
+            - utilization or cost trends in medical trend
+            - changes in demographic characteristics
+            - changes in benefits in the plan
+            - antiselection opportunities by insureds
+            - changes in insured, economic, financial env.
+    - common retention items
+        - expense loadings and ACA fees
+        - deficit recovery charge - to recoup past losses in prior years
+        - termination risk charge - in case policyholder in a deficit terminate contract
+        - pooling charge
+        - profit charge
+        - investment income
+        - explicit margin
+    - risk associated with rate guarantees 
+        - misestimation risk - locked into rates for a long period
+        - trend risk 
+
+- Retrospective
+    - financial experience for past period to determine cost of insurance for that period
+        - benefit of good experience and held accountable for adverse exp
+    - **formula balance**
+        - prior formula balance carried foward + premiums + investment earnings - claims charged - expenses charged - risk charge - premium stabilization reserve - profit
+    - **claims charged**
+        - claims paid + increase in reserves - pooled claims + pooling charge + conversion charge + claim margins
+    - calculation
+        - % of gross premmium = % of total premium
+
+    - claim charges
+        - modifications
+        - specific stop loss claims removed
+        - incurred claims in excess of aggregate stop-loss pooling removed
+        - pooling charge added back in 
+        - additional credibility pooling adjustments
+        - add in excess claims for conversion privileges
+
+    - Applicability
+        - group size: certain level of resources needed
+            - SG: for self funded only
+        - contract provisions 
+        - company polices and practices
+        - company financial situation
+
+- Funding Arrangements (MIS L RSR)
+    - fully **i**nsured: insurer bears all risk
+        - premum tax, subject to state laws
+    - **R**eserveless plans: foregoes premium payments, reconciliate payment needed during termination
+    - **M**inimum premium contracts: policyholder deposits funds to an account - claims paid from fund
+        - very similar to stop-loss
+    - **R**etrospective premium arrangements: policyholder takes part or all claim risk - reeduce risk charges and lower up-front premium
+        - if exp worse - addtional premium due
+        - if exp better - refund
+    - **S**elf insured plans: employer takes on role as primary risk taker
+        - usually with ASO (administrative services only) agreement
+        - may purchase stop-loss
+        - prem tax and ACA insurer fee avoided
+        - no state laws, only federal (ERISA)
+    - **L**evel-funded contracts: admin adjudicate and pays claims as long as premiums are paid
+        - reconciliation at the end of year
+            - incurred claims < than funded amount: surplus and receives admin credit
+            - incurred claims > funded amount: stop loss covers 
+        - attractive to small employers
+    - **S**top loss contracts: excess of particular level
+        - individual claims or aggregate levels
+
+**Learning of the day (7/28)**  
+- Overview
+    - **Retrospective Rating: premium setting**
+- Deficit Recovery Arrangement
+    - deficit claims are accumulated and added to total premium in future
+    - client side surplus includes all funds
+    - insurer side surplus inlcudes profit/loss from deficit claims
+- Unilateral
+    - surplus go back to client, deficit is paid by insurer
+    - client side surplus includes only positives
+    - insurer side surplus inlcudes only negatives 
+    - lowest profit for insurer
+    - deficit premium is not included in total premium
+- Bilateral
+    - surplus go back to client, deficit is paid by client
+    - client side surplus includes all funds (same ans deficit recovery)
+    - insurer side surplus doesn't include any deficit claims (paid by client)
+    - highest profit for insurer
+    - deficit premium is not included in total premium
+
+- Calculation
+    - adjust premiums
+        - get exp premium 
+            - pmpm paid prem - pmpm pooled prem
+        - total exp prem x (most recent pmpm/year t pmpm exp)
+    - trend claims
+        - based on trend and yrs away
+    - calculate actual and target LR 
+        target LR = 100% -expesne - fees - taxes - profit
+        actual LR = trended claims / adjusted prem x credibility weighting 
+        renewal rate increase = actual LR / Target LR - 1
+    - calculate premium
+        - base premium: prior year premium x (1 + rate inc)
+        - deficit recovery prem = accumulated deficit / (# members x mths)
+        - plus pooling premium
