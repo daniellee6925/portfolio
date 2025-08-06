@@ -883,3 +883,105 @@
         - base premium: prior year premium x (1 + rate inc)
         - deficit recovery prem = accumulated deficit / (# members x mths)
         - plus pooling premium
+
+
+**Learning of the day (8/1)**  
+- Overview
+    - **New Business underwriting**
+
+- Basics 
+    - underwriting: risk selection and financial projections
+    - inherent risk protection: employee risk pool is mostly healthy indv
+    - Key risk factors: demo, industry, financial outlook, location, persistency, participation
+    - prior experience: major factor to predict future costs 
+    - ER and carrier shared goals: want low costs, high quality care, and satisfied EE
+    - prior loss ratio/util
+    - life and disability require larger case size than medical and dental
+
+- ACA considerations
+    - plans offered by Large ER must meet minimum value (MV)
+    - plan must be affordable to avoid penalties
+        - cost EE less than 9.5% of their income for EE only coverage
+    - Cadilac Tax: penalties for rich benefit plans (no longer applicable)
+
+- public exchanges
+    - designed primarily for indv and small ER
+    - Individual Coverage Health Reimbursement Arrangements (ICHRAs)
+        - substantial penalties for ERs who don't provide affordable coverage
+        - past: QSEHRA
+- private exchanges
+    - insurer offer similar benefits and allow choice
+    - established by consulting groups
+    - creates antiselection risk
+
+- Characteristics of group
+    - age and gender
+    - location
+    - type of industry
+    - financial stability
+    - ease of administration
+    - level of subsidization and participation
+    - persistency
+    - other considerations
+        - ACA promotes access and consumer choice
+            - prohibits on preexisting condition
+            - restrict lifetime max, prohibit annual max
+            - require coverage to dependents to age 26
+            - health insurance exchange - GI
+    - Plan Design
+
+- Evaluation
+    - access to group specific experience data
+    - meaningful past data and trends: check prior experience is accurate and reliable
+    - know the risk and the existing carrier
+    - group life & disability: volatile and pooling of large claims ins common
+
+    - Medical
+        - one year is adequate to project future claims 
+        - adjust for discounts, cost containment programs, claim contorls
+        - evaluating and projecting claim costs requires dealing with multiple choice scenarios
+    - Medicare part D
+        - prescription drug benefits 
+        - ACA made option attractive to ERs who offer retiree coverage
+        - Wellness programs
+        - Dental and Vision
+            - large antiselection risk
+
+- Developing the propsoal
+    - basic considerations
+        - Request for proposals (RFP): goal is highly customized plan
+        - consider plan design, funding arrangement, enrollment pattern
+        - risk sharing arrangement
+        - admin and other expenses
+    - performance guarantee
+        - very large group has less need for insurance
+        - more focus on quality and price of admin
+            - degree to which services are centralized
+            - dedicated service teams
+            - management of tracking reports
+            - accountability for results
+            - customer service
+            - ability to influence 3rd parties 
+    - funding alternatives
+        - consider if ER offers multiple choices among plans and vendors
+        - alternatvies: fully-insured, self-funded, combination
+
+- Renewal Underwriting
+    - evaluating the case
+        - review enrollment, antiselection, catastrophic, etc.
+    - developing renewal recommendations 
+        - new premium
+        - alternative funding methods or plan design changes
+    - revision underwriting
+        - develop cost estimates for changes in group composition
+    - renewal monitoring
+        - track emerging exp
+
+- Special risks
+    - Association programs
+        - association of individuals, multiple-employer trusts (METs)
+        - ACA: eliminate need for association 
+    - Taft-Hartley Groups
+        - state law differ widely with eligibility rules, types of coverage, size req, EE contribution
+    - Purchasing Alliances
+        - two or more non-affiliated large groups
