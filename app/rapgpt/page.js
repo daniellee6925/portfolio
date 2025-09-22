@@ -243,7 +243,7 @@ const RapGPTDocs = () => {
             <thead className="bg-gray-100">
               <tr>
                 <th className="py-2 px-4 border-b">Prompt</th>
-                <th className="py-2 px-4 border-b">Cosine Similarity</th>
+                <th className="py-2 px-4 border-b">Similarity Score</th>
                 <th className="py-2 px-4 border-b">Comment</th>
               </tr>
             </thead>

@@ -887,7 +887,7 @@
 
 **Learning of the day (8/1)**  
 - Overview
-    - **New Business underwriting**
+    - **Fundamentals of underwriting**
 
 - Basics 
     - underwriting: risk selection and financial projections
@@ -985,3 +985,61 @@
         - state law differ widely with eligibility rules, types of coverage, size req, EE contribution
     - Purchasing Alliances
         - two or more non-affiliated large groups
+
+**Learning of the day (8/3)**  
+- Overview
+    - **Multiple Choice Environment Underwriting and Pricing**
+
+- Multiple choice: ER allows EE to choose among 2 or more medical insurance options
+    - Favorable: low risk EEs
+    - Unfavorable: high risk (anti-selection)
+- Why offer choice?
+    - overall cost in a multiple choice env. > single choice env.
+        - individuals choose to minimize OOP costs (cost of insurer or ER)
+        - less economy of scale
+        - communcations more complex, more admin and expenes
+    - advantage
+        - introduce new option
+        - take advantage of favorable selection
+        - encourage consumerism
+        - implement a defined contribution concept
+        - choice of the sake of choice
+- What influence EE choice?
+    - inertia
+    - plan provisions and cost
+    - EE and dependent demographics
+    - ER actions and attitude
+    - Eligibility for other health insurance coverage
+    - Information about options
+    - provider network attributes
+    - insurer and admin issues
+- Measuring selection and health status
+    - insurers supplement traditional age/gender with risk and health status
+        - health risk asssessment
+        - risk adjusters
+    - measure of selectionb - average health risk assessment
+- Selection impact of EE contributions
+    - Defined Contribution (DC)
+        - ER fixed contribution, EE coveres remainder
+        - insurer should consider EE selection when setting premiums
+            - include selection loading
+- Underwriting Techniques
+    - Additional premium margin (selection loading)
+    - EE contributions or plan design limits
+        - limit spread in EE contributions 
+        - limit spread in benefits
+        - mix favorable cost sharing or benefit provisions
+        - avoid options with selection potential for specific issues
+        - participatiion requirements if multiple insurer offer choices
+            - insurers can agree to redistribute income based on health status
+        
+- Pricing Strategies
+    - 1. Determine AV of each benefit plan ignoring impact of selection
+    - 2. estimate enrollemnt mix by plan option
+    - 3. Estimate relative health status factor for each option
+    - 4. Calculate preliminary selection adjusted rates for each option
+        - step 1 x step 3 (for multiple)
+    - 5. calculate the average selection load
+        - avg step 4 / avg step 3 
+    - 6. calculate blended selection adjusted rates
+        - step 1 x step 5 (for single)
